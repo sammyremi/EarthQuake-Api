@@ -16,6 +16,8 @@ gem "devise"
 
 gem "devise_token_auth"
 
+gem "doorkeeper"
+
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
