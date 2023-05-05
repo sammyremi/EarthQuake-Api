@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  datetime: 2023-05-05 08:55:40
+  latitude: 1.5
+  longitude: 1.5
+  depth: 1.5
+  magnitude: 1.5
+  mag_type: MyString
+  nb_stations: 1
+  gap: 1
+  distance: 1.5
+  rms: 1.5
+  source: MyString
+  event_id: MyString
+
+two:
+  datetime: 2023-05-05 08:55:40
+  latitude: 1.5
+  longitude: 1.5
+  depth: 1.5
+  magnitude: 1.5
+  mag_type: MyString
+  nb_stations: 1
+  gap: 1
+  distance: 1.5
+  rms: 1.5
+  source: MyString
+  event_id: MyString
