@@ -10,8 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 0) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_05_075540) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "quakes", force: :cascade do |t|
+    t.datetime "datetime"
+    t.float "latitude"
+    t.float "longitude"
+    t.float "depth"
+    t.float "magnitude"
+    t.string "mag_type"
+    t.integer "nb_stations"
+    t.integer "gap"
+    t.float "distance"
+    t.float "rms"
+    t.string "source"
+    t.string "event_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
