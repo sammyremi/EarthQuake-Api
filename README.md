@@ -1,24 +1,51 @@
-# README
+# Welcome to My Api
+The Earthquake API is a RESTful API that provides information about earthquakes. It utilizes Redis for caching, Swagger for API documentation, Google OAuth2 for authentication, and is deployed on AWS EC2 within Docker containers.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# API URL
+my_api app aws url: https://my-earthquake-api-v1.fly.dev
 
-Things you may want to cover:
+swagger documentation url: https://my-earthquake-api-v1.fly.dev/api-docs/index.html
 
-* Ruby version
+## Task
+Fetch earthquake data from the Quakes API and provide a consistent and standardized interface for accessing earthquake information.
 
-* System dependencies
+Cache earthquake data using Redis to improve performance and reduce the load on the Quakes API.
 
-* Configuration
+Secure endpoints using Google OAuth2 authentication to ensure only authorized users can access protected resources.
 
-* Database creation
+Comprehensive API documentation with Swagger to assist developers in understanding and utilizing the available endpoints.
 
-* Database initialization
+Deployment on AWS EC2 within Docker containers for easy scalability and portability.
 
-* How to run the test suite
+## Description
+To access protected endpoints, users must authenticate using their Google accounts through the Google OAuth2 authentication process. The API verifies the user's identity and grants access to protected resources accordingly.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Installation
+Ruby version 3.2.2
+Rails version 7.X.X
+Redis
+Docker
+AWS EC2 instance
 
-* Deployment instructions
+## Usage
+https://my-earthquake-api-v1.fly.dev
 
-* ...
+git clone repo
+
+bundle install
+
+rails db:migrate
+
+rails db:seed
+
+rails server
+```
+./my_project argument1 argument2
+```
+
+### The Core Team
+
+Samuel Adebayo
+
+<span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
+<span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px'></span>

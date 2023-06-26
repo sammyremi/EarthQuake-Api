@@ -1,0 +1,14 @@
+<h1>Earhquakes Api</h1>
+
+<%= link_to "Swagger Docs", rswag_api_path %></br>
+<%= link_to "Api Index", api_v1_quakes_path %>
+<div>
+<% if !current_user %>
+<%= link_to "Login", user_session_path %>
+<% else %>
+  <%= link_to "Logout", destroy_user_session_path %>
+<% end %>
+</div>
+
+
+
